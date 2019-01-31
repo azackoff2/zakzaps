@@ -6,6 +6,7 @@ const JobSearch = require('./searches/job');
 const InvoiceSearch = require('./searches/invoice');
 const GetInvoice = require('./searches/getinvoice');
 const ListInvoice = require('./searches/listinvoice');
+const ListJobs = require('./searches/ListJobs');
 const authentication = require('./authentication');
 
 // To include the API key on all outbound requests, simply define a function here.
@@ -52,6 +53,7 @@ const App = {
     [InvoiceSearch.key]: InvoiceSearch,
     [GetInvoice.key]: GetInvoice,
     [ListInvoice.key]: ListInvoice,
+    [ListJobs.key]: ListJobs,
   },
 
   // If you want your creates to show up, you better include it here!
